@@ -18,3 +18,8 @@ npm install
  ```
  ng serve
  ```
+
+## Notes to myself 
+1. ❗❗ By using async pipe, Angular will be responsible 
+for automatically subscribe and unsubscribe from the observable.
+2. Consider error handling.
