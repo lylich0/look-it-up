@@ -1,0 +1,23 @@
+.country-details {
+  border-bottom: 1px solid lightgrey;
+}
+
+.holiday-card {
+  width: 400px;
+  height: 140px;
+}
+
+.holiday-card:hover {
+  border: 1px solid lightblue;
+  background-color: lightblue;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination-container button {
+  width: 200px;
+  margin: 10px;
+}

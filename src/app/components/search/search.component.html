@@ -1,0 +1,12 @@
+<input #searchElement type="text" placeholder="Search by country name..." (input)="search(searchElement.value)" />
+
+<ng-container *ngIf="results$ | async as results">
+  <div *ngIf="results.length > 0; else noResults">
+    <div *ngFor="let country of results">
+      <a [routerLink]="['/details', country.countryCode]" class="text-decoration-none"> {{ country.name }} </a>
+    </div>
+  </div>
+  <ng-template #noResults>
+    <div>No results.</div>
+  </ng-template>
+</ng-container>

@@ -1,0 +1,14 @@
+.widget-card {
+  height: 160px;
+  width: 400px;
+  border: 1px solid black;
+}
+
+.widget-card:hover {
+  background-color: lightgrey;
+  border: 2px solid darkblue;
+}
+
+.widget-card__holidays_text {
+  height: 50px;
+}

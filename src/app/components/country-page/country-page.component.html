@@ -1,0 +1,30 @@
+<div *ngIf="country$ | async as country">
+  <section class="country-details">
+    <h3 class="text-center">{{ country.officialName }}</h3>
+    <p>{{ country.officialName }}, often known as {{ country.commonName }}, is located in {{ country.region }}.</p>
+    <p>This country has {{ country.borders.length > 1 ? country.borders.length + ' neighbors' : country.borders.length === 1 ? '1 neighbor' : 'no neighbors' }}.</p>
+  </section>
+  <section class="holidays-details">
+    <div class="pagination-container">
+      <button class="prev-button btn btn-primary" (click)="changeYear('previous')" [disabled]="currentYear == startYear">{{ currentYear - 1 }} <<</button>
+      <button class="btn btn-info">{{ currentYear }}</button>
+      <button class="next-button btn btn-primary" (click)="changeYear('next')" [disabled]="currentYear == endYear">>> {{ currentYear + 1 }}</button>
+    </div>
+    <div class="holidays-list d-flex justify-content-center">
+      <div>
+        <h5 class="text-center">Holidays</h5>
+        <div *ngIf="holidays$ | async as holidays">
+          <div *ngFor="let holiday of holidays" class="row">
+            <div class="holiday-card card m-2 col-md-6">
+              <div class="card-body">
+                <h6 class="card-title">{{ holiday.name }}</h6>
+                <p class="card-text">{{ holiday.date | date: 'longDate' }}</p>
+                <p class="card-text">{{ holiday.types }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

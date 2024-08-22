@@ -1,0 +1,5 @@
+<div *ngIf="combinedData" class="widget-container d-flex justify-content-center">
+  <div *ngFor="let data of combinedData" class="m-3">
+    <app-widget-card [data]="data"></app-widget-card>
+  </div>
+</div>

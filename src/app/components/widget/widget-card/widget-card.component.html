@@ -1,0 +1,17 @@
+<div class="widget-card card">
+  <div class="card-body">
+    <h3 class="card-title text-center">
+      <a class="text-decoration-none" [routerLink]="['/details', data.country.countryCode]">
+        {{ data.country.commonName }}
+      </a>
+    </h3>
+    <div class="widget-card__holidays card-text">
+      <div class="widget-card__holidays_text mb-2">
+        <p>{{ data.holidays[0].name }}</p>
+      </div>
+      <div class="fst-italic">
+        <p>{{ data.holidays[0].date | date: 'longDate' }}</p>
+      </div>
+    </div>
+  </div>
+</div>
