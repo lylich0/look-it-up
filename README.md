@@ -10,6 +10,33 @@ Dive into the API documentation [here](https://date.nager.at/swagger/index.html)
 
 <img src="src/assets/overview.gif" alt="app presentation" style="width: 100%">
 
+``` 
+  src/
+├── app/
+│   ├── components/ 
+│   │    ├── country-page/
+│   │    ├── home/
+│   │    ├── search/
+│   │    └── widget/
+│   │        └── widget-card/
+│   ├── models/
+│   │    ├── ICountries.ts
+│   │    ├── ICountry.ts
+│   │    └── IHoliday.ts
+│   ├── services/
+│   │    └── countries.service.ts
+│   │
+│   ├── app.component.html
+│   ├── app.component.css
+│   ├── app.component.ts
+│   ├── app.config.ts
+│   └── app.routes.ts
+│ 
+├── environments/
+│   └── environment.ts
+│
+└── ... other files
+```
 ---
 ## Development server 
 ```
