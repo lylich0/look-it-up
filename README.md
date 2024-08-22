@@ -1,11 +1,20 @@
-## Overview
-This application allows users to search for countries, view details about their holidays, and see neighboring countries.
+<h1 align="center">Country Explorer</h1>
 
-API documentation could be found [here](https://date.nager.at/swagger/index.html).
+--- 
+## Description
+Explore the world with **Country Explorer** — your gateway to discovering countries, their unique holidays, and neighboring nations. 
+Dive into the API documentation [here](https://date.nager.at/swagger/index.html) to learn more about how this app brings the world to your fingertips.
+
+---
+## Overview 
 
 <img src="src/assets/overview.gif" alt="app presentation" style="width: 100%">
 
+---
 ## Development server 
+```
+npm install
+```
  ```
  ng serve
  ```
